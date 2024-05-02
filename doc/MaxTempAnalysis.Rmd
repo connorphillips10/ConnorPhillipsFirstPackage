@@ -1,0 +1,19 @@
+---
+title: "maxTemp_test"
+author: "Connor Phillips"
+date: "2024-04-27"
+output: pdf_document
+---
+
+
+This Rmarkdown file will do the analysis.
+
+```{r}
+library(STA445package)   # load TestPackage, which includes MaxTemp data frame.
+library(ggplot2)
+
+ggplot(MaxTemp, aes(x=Date, y=MaxTemp)) +
+  geom_line()
+```
+
+We see that the daily max temperature in Flagstaff varies quite a lot.
